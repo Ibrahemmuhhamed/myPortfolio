@@ -5,12 +5,12 @@
       "role": "front-end",
       "credit": "Absoulty NO Body",
       "year": 2024,
-      "mainImg": "../images/project.jpg",
-      "disktopImgs": ["../images/854shots_so.png", "../images/869shots_so.png"],
+      "mainImg": "https://ibrahemmuhhamed.github.io/myPortfolio/imagesproject.jpg",
+      "disktopImgs": ["https://ibrahemmuhhamed.github.io/myPortfolio/images854shots_so.png", "https://ibrahemmuhhamed.github.io/myPortfolio/images869shots_so.png"],
       "mobileImgs": [
-        "../images/395shots_so.png",
-        "../images/537shots_so.png",
-        "../images/537shots_so.png"
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images395shots_so.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images537shots_so.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images537shots_so.png"
       ],
       "liveLink": "www.google.com"
     },
@@ -19,12 +19,12 @@
       "role": "front-end",
       "credit": "Absoulty NO Body",
       "year": 2024,
-      "mainImg": "../images/project.jpg",
-      "disktopImgs": ["../images/854shots_so.png", "../images/869shots_so.png"],
+      "mainImg": "https://ibrahemmuhhamed.github.io/myPortfolio/imagesproject.jpg",
+      "disktopImgs": ["https://ibrahemmuhhamed.github.io/myPortfolio/images854shots_so.png", "https://ibrahemmuhhamed.github.io/myPortfolio/images869shots_so.png"],
       "mobileImgs": [
-        "../images/395shots_so.png",
-        "../images/537shots_so.png",
-        "../images/537shots_so.png"
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images395shots_so.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images537shots_so.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images537shots_so.png"
       ],
       "liveLink": "www.google.com"
     },
@@ -33,15 +33,15 @@
       "role": "front-end",
       "credit": "Senne Winges",
       "year": 2024,
-      "mainImg": "../images/sennemain.png",
+      "mainImg": "https://ibrahemmuhhamed.github.io/myPortfolio/imagessennemain.png",
       "disktopImgs": [
-        "../images/SenneWinges1.png",
-        "../images/senneDisktop2.png"
+        "https://ibrahemmuhhamed.github.io/myPortfolio/imagesSenneWinges1.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/imagessenneDisktop2.png"
       ],
       "mobileImgs": [
-        "../images/sennemobile1.png",
-        "../images/sennemobile2.png",
-        "../images/sennemobile3.png"
+        "https://ibrahemmuhhamed.github.io/myPortfolio/imagessennemobile1.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/imagessennemobile2.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/imagessennemobile3.png"
       ],
       "liveLink": "www.google.com"
     },
@@ -50,12 +50,12 @@
       "role": "front-end",
       "credit": "Absoulty NO Body",
       "year": 2024,
-      "mainImg": "../images/project.jpg",
-      "disktopImgs": ["../images/854shots_so.png", "../images/869shots_so.png"],
+      "mainImg": "https://ibrahemmuhhamed.github.io/myPortfolio/imagesproject.jpg",
+      "disktopImgs": ["https://ibrahemmuhhamed.github.io/myPortfolio/images854shots_so.png", "https://ibrahemmuhhamed.github.io/myPortfolio/images869shots_so.png"],
       "mobileImgs": [
-        "../images/395shots_so.png",
-        "../images/537shots_so.png",
-        "../images/537shots_so.png"
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images395shots_so.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images537shots_so.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images537shots_so.png"
       ],
       "liveLink": "www.google.com"
     }
