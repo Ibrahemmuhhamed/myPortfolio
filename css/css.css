@@ -1,0 +1,396 @@
+:root {
+  /* --main-color: #092635; */
+  --main-color: #090909;
+  --secund-color: #eee;
+  --third-color: #d72323;
+  --white: #fff;
+  --bg-lines: #fff;
+  --nav-scrolled--animation: 1000ms;
+  --nav-height: 118px;
+  --nav-timing-function: ease-in-out;
+  --skill-view-duration: 1s;
+  --typing-duration: 550ms;
+  --flip-text-duration: 500ms;
+}
+html {
+  scroll-behavior: auto !important;
+}
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  /* height: 500vh; */
+  background-color: #000;
+  background-image: radial-gradient(#181818ac 1px, transparent 1px),
+    radial-gradient(#181818ac 1px, transparent 1px);
+  background-size: 33px 33px;
+  background-position: 0 0, 16.5px 16.5px;
+  background-color: #000000;
+  font-family: "Madimi One", sans-serif;
+
+  font-family: "Inter", sans-serif;
+}
+.cursor--overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: transparent;
+  .cursor {
+    --width: 250px;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: var(--width);
+    height: var(--width);
+    background-color: #222222;
+    border-radius: 50%;
+    filter: blur(110px);
+    transform: translate(-50%, -50%);
+  }
+}
+.container {
+  width: min(1250px, 100%);
+  margin: 0 auto;
+}
+body.hidden {
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.relative {
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 55px;
+  align-items: center;
+  position: sticky;
+  z-index: 5;
+  width: 100%;
+  top: 0;
+  max-height: 118px;
+  /* background-color: #000; */
+}
+nav::after {
+  left: 0;
+  content: "";
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: calc(var(--nav-height) + 4vh);
+  z-index: -1;
+  mask-image: linear-gradient(180deg, #000000, #74444400);
+  /* background-color: var(--bg-color, #000); */
+}
+nav .logo svg {
+  fill: var(--secund-color);
+  width: 60px;
+}
+nav .links {
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  list-style: none;
+  min-height: 61px;
+}
+nav .links .nav--links {
+  display: flex;
+  flex: 1;
+  list-style: none;
+  font-size: clamp(18px, 1.6vw, 18px);
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+}
+
+nav .links .nav--links li {
+  padding: 15px 30px;
+  --animation-delay: calc(var(--x) * 50ms);
+  transition: 350ms all var(--animation-delay);
+  color: #eee;
+}
+nav:not(.scrolled) .nav--links li:not(.contact--link) {
+  transform: translateY(0%);
+}
+nav.scrolled .nav--links li:not(.contact--link) {
+  transform: translateY(-100%);
+}
+nav .nav--links li.contact--link {
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+nav .links li.contact--link a {
+  text-decoration: none;
+  --contact--link-transiton: 1000ms;
+  position: relative;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  transition: var(--flip-text-duration) all;
+  min-width: 61px;
+}
+.contact--link a > * {
+  overflow: hidden;
+}
+nav.scrolled .links li.contact--link a {
+  grid-template-columns: 0fr;
+  border: 2px solid transparent;
+}
+nav.scrolled .links li.contact--link a span {
+  opacity: 0;
+  transition: var(--nav-scrolled--animation) all;
+}
+.nav--circl {
+  position: absolute;
+  right: 0;
+  background-color: var(--main-color);
+  transform: scale(0);
+  transition: 350ms transform;
+  background-color: var(--main-color);
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 0fr;
+  cursor: pointer;
+  justify-items: end;
+  border-radius: 35px;
+}
+nav.scrolled .nav--circl.closed {
+  transition: var(--nav-scrolled--animation) all var(--nav-timing-function);
+}
+.nav--circl.active {
+  transform-origin: right top;
+  grid-template-rows: auto 1fr;
+  transition: var(--nav-scrolled--animation) all var(--nav-timing-function);
+}
+.nav--circl.active ul {
+  width: min(300px, 70vw);
+  padding-block: 25px;
+}
+.side--nav .title {
+  font-size: 14px;
+  color: #989898;
+}
+.side--nav li {
+  padding: 10px 30px;
+  position: relative;
+  transition-duration: 750ms;
+}
+.side--nav li:not(.title)::after {
+  content: "";
+  transition-duration: inherit;
+  transition-property: background-color;
+  position: absolute;
+  height: 10px;
+  aspect-ratio: 1;
+  background-color: transparent;
+  border-radius: 50%;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.side--nav li:hover::after {
+  background-color: var(--bg-lines);
+}
+.side--nav li:not(.title):hover a {
+  color: var(--bg-lines);
+}
+.side--nav a {
+  transition-duration: inherit;
+  transition-property: color;
+  color: var(--bg-lines);
+  text-decoration: none;
+}
+.nav--circl ul {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  width: 35px;
+  font-size: 21px;
+  color: #fff;
+  transition: var(--nav-scrolled--animation) all var(--nav-timing-function);
+  list-style: none;
+}
+.nav--circl > * {
+  overflow: hidden;
+}
+.nav--circl .lines {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  height: 61px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.nav--circl .lines > div {
+  transition: var(--nav-scrolled--animation) all;
+  width: 50%;
+  height: 3px;
+  background-color: var(--bg-lines);
+}
+
+.nav--circl.active .lines div:nth-child(1) {
+  transform: rotate(45deg) translateX(6px);
+}
+.nav--circl.active .lines div:nth-child(2) {
+  transform: rotate(-45deg) translateX(6px);
+}
+
+nav.scrolled .nav--circl {
+  transform: scale(1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(0);
+  }
+}
+.nav--links a {
+  text-decoration: none;
+  color: var(--secund-color);
+  color: inherit;
+  padding: 5px 10px;
+  border-radius: 35px;
+}
+
+[text-flip] {
+  position: relative;
+  overflow: hidden;
+  transition: 300ms all;
+  display: block;
+}
+[text-flip]::after {
+  content: attr(content);
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  transition: inherit;
+  background-color: var(--third-color);
+  color: #fff;
+  padding: inherit;
+  border-radius: inherit;
+}
+.contact--link [text-flip]::after {
+  background-color: var(--third-color);
+  color: var(--main-color);
+}
+[text-flip] .text {
+  position: relative;
+  transition: inherit;
+  display: inline-block;
+}
+[text-flip]:hover .text {
+  transform: scale(0);
+}
+[text-flip]:hover::after {
+  transform: translate(-50%, -50%);
+}
+.flip--parent:hover [text-flip]:not(.clone) {
+  transform: translateY(-150%);
+}
+.clone {
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+}
+.contact--link a {
+  font-size: 21px;
+  overflow: hidden;
+}
+.contact--link a {
+  background-color: transparent;
+  color: var(--secund-color);
+  border: 2px solid var(--secund-color);
+  border-radius: 50px;
+  animation: nav--animation 2s forwards;
+  padding: 10px 25px;
+}
+.contact--link:hover a {
+  border: 2px solid(--secund-color);
+}
+.contact--link a {
+  overflow: hidden;
+}
+
+@keyframes nav--scrolled {
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@media screen and (width < 824px) {
+  nav .links .nav--links {
+    display: none;
+  }
+  nav .links {
+    justify-content: flex-end;
+  }
+  .contact--link {
+    display: none;
+  }
+  .nav--circl {
+    transition: var(--nav-scrolled--animation) all var(--nav-timing-function);
+    transform: scale(1);
+    background-color: #eee !important;
+
+    .lines div {
+      background-color: #000;
+    }
+  }
+  .side--nav li,
+  .side--nav a {
+    color: #000 !important;
+  }
+}
+main section {
+  position: relative;
+  margin-bottom: 70px;
+}
+.section--title {
+  font-size: clamp(40px, 5.6vw, 75px);
+  margin-bottom: 80px;
+}
+h1 {
+  font-size: clamp(35px, 6.4vw, 82px);
+  color: var(--secund-color);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+[data-mouse-effect],
+[data-mouse-effect] > * {
+  transform: translate(0, 0);
+}
+
+[data-mouse-effect]:not(:hover),
+[data-mouse-effect]:not(:hover) > * {
+  transition: 500ms;
+}
+[data-mouse-effect]:hover {
+  transform: translate(var(--x), var(--y));
+}
+
+[data-mouse-effect]:hover span {
+  transform: translate(calc(var(--x) / 2), calc(var(--y) / 2));
+}
+@keyframes dd {
+  100% {
+    transform: translate(var(--x), var(--y));
+  }
+}

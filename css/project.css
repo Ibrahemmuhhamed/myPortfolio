@@ -1,0 +1,357 @@
+:root {
+  /* Font Families */
+  --font-family-primary: "Inter", sans-serif; /* Change to your preferred font */
+  --font-family-secondary: "Merriweather", serif; /* Optional secondary font */
+  --font-family-monospace: "Courier New", monospace;
+
+  /* Font Sizes */
+  --font-size-xxs: clamp(0.5rem, 0.6vw, 0.625rem); /* 10px */
+  --font-size-xs: clamp(0.625rem, 0.8vw, 0.75rem); /* 12px */
+  --font-size-sm: clamp(0.75rem, 1vw, 0.875rem); /* 14px */
+  --font-size-md: clamp(0.875rem, 1.2vw, 1rem); /* 16px */
+  --font-size-lg: clamp(1rem, 1.5vw, 1.125rem); /* 18px */
+  --font-size-xl: clamp(1.125rem, 2vw, 1.25rem); /* 20px */
+  --font-size-2xl: clamp(1.25rem, 2.5vw, 1.5rem); /* 24px */
+  --font-size-3xl: clamp(1.5rem, 3vw, 1.875rem); /* 30px */
+  --font-size-4xl: clamp(1.875rem, 4vw, 2.25rem); /* 36px */
+  --font-size-5xl: clamp(2.25rem, 5vw, 4rem); /* 48px */
+
+  /* Font Weights */
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  /* Line Heights */
+  --line-height-none: 1;
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  /* Letter Spacing */
+  --letter-spacing-tighter: -0.05em;
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+
+  /* Text Colors */
+  --text-color-primary: #212121; /* Default text color */
+  --text-color-secondary: #616161; /* For subtitles or muted text */
+  --text-color-light: #eee; /* Light text */
+  --text-color-muted: #9e9e9e; /* Muted or disabled text */
+
+  --footer-background: #eee;
+  /* Miscellaneous */
+  --text-transform-uppercase: uppercase;
+  --text-transform-lowercase: lowercase;
+  --text-transform-capitalize: capitalize;
+  --margin-xxs: clamp(0.25rem, 0.5vw, 0.5rem); /* 4px to 8px */
+  --margin-xs: clamp(0.5rem, 1vw, 0.75rem); /* 8px to 12px */
+  --margin-sm: clamp(0.75rem, 1.5vw, 1rem); /* 12px to 16px */
+  --margin-md: clamp(1rem, 2vw, 1.5rem); /* 16px to 24px */
+  --margin-lg: clamp(1.5rem, 3vw, 2rem); /* 24px to 32px */
+  --margin-xl: clamp(2rem, 4vw, 3rem); /* 32px to 48px */
+  --margin-2xl: clamp(3rem, 6vw, 4rem); /* 48px to 64px */
+}
+body {
+  color: var(--secund-color);
+}
+/* remove nav background on end of the page */
+
+.page--end {
+  background-color: transparent;
+}
+.page--end::after {
+  background-color: transparent;
+}
+.project--overview .container {
+  --_info--image-gap: var(--margin-2xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin-lg);
+}
+.project--name {
+  text-align: left;
+  font-size: var(--font-size-5xl) !important;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  margin-top: var(--margin-lg);
+}
+.project--info {
+  position: relative;
+  /* margin-top: var(--margin-2xl); */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--margin-lg);
+  > div h2 {
+    font-size: var(--font-size-sm);
+  }
+  > div h3 {
+    font-size: var(--font-size-sm);
+  }
+}
+.project--link {
+  position: absolute;
+  bottom: calc(var(--_info--image-gap) * -2 - 50% - 100px);
+  /* transform: translateY(50%); */
+  right: var(--margin-lg);
+  width: 200px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--secund-color);
+  display: grid;
+  place-items: center;
+  color: var(--main-color);
+  font-weight: var(--font-weight-bold);
+  z-index: 3333;
+}
+.project--info > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin-lg);
+  position: relative;
+  h2 {
+    color: var(--text-color-muted);
+    font-weight: var(--font-weight-light);
+    font-size: var(--font-size-sm);
+  }
+}
+.project--info > div::after {
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: var(--text-color-muted);
+  width: 80%;
+  opacity: 0.5;
+  position: absolute;
+  height: 1px;
+}
+.landing--image {
+  margin-block: calc(var(--_info--image-gap) * 2);
+  img {
+    width: 100%;
+    background-color: var(--main-color);
+    mask-image: radial-gradient(circle at center, #000000 0%, #00000061 100%);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+  }
+}
+
+.project--images {
+  --_background-color: var(--main-color);
+
+  --_margin--bottom: var(--margin-2xl) !important;
+  margin-bottom: var(--_margin--bottom);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+.project--images::after {
+  --y-diff: 80%;
+  content: "";
+  width: 100%;
+  height: 280px;
+  bottom: calc(var(--_margin--bottom) * -1);
+  transform: translateY(calc(var(--y-diff) - 15px));
+  position: absolute;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) var(--y-diff),
+    rgba(0, 0, 0, 0) var(--y-diff)
+  );
+  left: 0;
+  border-radius: var(--y-diff);
+  z-index: 0;
+  animation: footer--animation 1s linear both;
+  animation-timeline: view();
+  animation-range: cover 0% cover 100%;
+  box-shadow: 0px 15px 20px 5px #0000007d;
+}
+@keyframes footer--animation {
+  100% {
+    transform: translateY(0px);
+
+    border-radius: 0px;
+  }
+}
+
+.project--images img {
+  margin-block: var(--margin-2xl);
+  width: 100%;
+  height: 100%;
+}
+.mobile img {
+  /* flex: 1; */
+  object-fit: contain;
+  height: fit-content;
+  width: 290px;
+  aspect-ratio: 1 / 2;
+}
+.project--images .mobile {
+  display: flex;
+  gap: var(--margin-2xl);
+  --dy: 150px;
+  justify-content: center;
+  img {
+    animation: mobileScreen 5s linear both;
+    animation-timeline: view();
+    animation-range: 30vh 80vh;
+  }
+}
+.project--images .mobile img:nth-child(1) {
+  transform: translateY(calc(var(--dy) * 1));
+}
+.project--images .mobile img:nth-child(2) {
+  transform: translateY(calc(var(--dy) * 2));
+}
+.project--images .mobile img:nth-child(3) {
+  transform: translateY(calc(var(--dy) * 3));
+}
+@keyframes mobileScreen {
+  to {
+    transform: translate(0, 0);
+  }
+}
+.next--project {
+  padding: var(--margin-2xl);
+  color: var(--main-color);
+  height: 100vh;
+  background-color: var(--footer-background);
+}
+.next--project h1 {
+  /* margin-top: var(--margin-2xl); */
+  color: var(--main-color);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-wide);
+  transition: 250ms all;
+}
+.next--project h2 {
+  font-size: var(--font-size-sm);
+  font-weight: 800;
+  color: #212121;
+}
+.next--project .container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin-lg);
+  background-color: inherit;
+}
+.next--project .project--card {
+  --_card--height: 200px;
+  max-height: var(--_card--height);
+  position: relative;
+  background-color: inherit;
+  border-bottom: 1px solid #000;
+}
+.project--card::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: inherit;
+  height: 105%;
+  z-index: 11;
+  top: calc(100% + 1px);
+  left: 0;
+}
+.next--project .project--card img {
+  max-width: 350px;
+  max-height: calc(var(--_card--height) * 2);
+  transition: 250ms all;
+  transform: translateY(0);
+  z-index: -1;
+  background-color: transparent;
+}
+.next--project:has(img:hover) h1 {
+  opacity: 0.2;
+}
+.next--project .container img:hover {
+  transform: translateY(-25%);
+}
+.next--project .container:hover h1 {
+}
+.link {
+  text-align: center;
+  padding: 15px 30px;
+  border: 1px solid #000;
+  position: relative;
+  z-index: 444;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.link::before {
+  --_animation--time: 250ms;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--third-color);
+  border-radius: 50%;
+  transform: translateY(100%);
+  z-index: -1;
+  animation-timing-function: ease-in-out !important;
+}
+.link:hover {
+  /* color: #eee; */
+}
+.link:hover::before {
+  animation: link--hover var(--_animation--time) forwards;
+}
+.link:not(:hover)::before {
+  animation: link--removehover var(--_animation--time) forwards;
+}
+
+@keyframes link--hover {
+  to {
+    border-radius: 0;
+    transform: translate(0, 0);
+  }
+}
+@keyframes link--removehover {
+  from {
+    border-radius: 0;
+    transform: translate(0, 0);
+  }
+  to {
+    border-radius: 50%;
+    transform: translate(0, -100%);
+  }
+}
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 10px 15px;
+  }
+  .project--link {
+    left: 50%;
+    transform: translate(-50%, 0) !important;
+    span {
+      transform: translate(0, 0) !important;
+    }
+  }
+  .landing--image img {
+    display: none;
+  }
+  .mobile {
+    flex-wrap: wrap;
+  }
+  .project--images .mobile img {
+    transform: translateY(0) !important;
+  }
+}

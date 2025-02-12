@@ -1,0 +1,63 @@
+{
+  "data": [
+    {
+      "name": "Fantasy Assistant",
+      "role": "front-end",
+      "credit": "Absoulty NO Body",
+      "year": 2024,
+      "mainImg": "../images/project.jpg",
+      "disktopImgs": ["../images/854shots_so.png", "../images/869shots_so.png"],
+      "mobileImgs": [
+        "../images/395shots_so.png",
+        "../images/537shots_so.png",
+        "../images/537shots_so.png"
+      ],
+      "liveLink": "www.google.com"
+    },
+    {
+      "name": "Fantasy Assistant",
+      "role": "front-end",
+      "credit": "Absoulty NO Body",
+      "year": 2024,
+      "mainImg": "../images/project.jpg",
+      "disktopImgs": ["../images/854shots_so.png", "../images/869shots_so.png"],
+      "mobileImgs": [
+        "../images/395shots_so.png",
+        "../images/537shots_so.png",
+        "../images/537shots_so.png"
+      ],
+      "liveLink": "www.google.com"
+    },
+    {
+      "name": "Senne Winges Portfolio",
+      "role": "front-end",
+      "credit": "Senne Winges",
+      "year": 2024,
+      "mainImg": "../images/sennemain.png",
+      "disktopImgs": [
+        "../images/SenneWinges1.png",
+        "../images/senneDisktop2.png"
+      ],
+      "mobileImgs": [
+        "../images/sennemobile1.png",
+        "../images/sennemobile2.png",
+        "../images/sennemobile3.png"
+      ],
+      "liveLink": "www.google.com"
+    },
+    {
+      "name": "Fantasy Assistant",
+      "role": "front-end",
+      "credit": "Absoulty NO Body",
+      "year": 2024,
+      "mainImg": "../images/project.jpg",
+      "disktopImgs": ["../images/854shots_so.png", "../images/869shots_so.png"],
+      "mobileImgs": [
+        "../images/395shots_so.png",
+        "../images/537shots_so.png",
+        "../images/537shots_so.png"
+      ],
+      "liveLink": "www.google.com"
+    }
+  ]
+}
