@@ -5,12 +5,12 @@
       "role": "front-end",
       "credit": "Absoulty NO Body",
       "year": 2024,
-      "mainImg": "https://ibrahemmuhhamed.github.io/myPortfolio/imagesproject.jpg",
-      "disktopImgs": ["https://ibrahemmuhhamed.github.io/myPortfolio/images854shots_so.png", "https://ibrahemmuhhamed.github.io/myPortfolio/images869shots_so.png"],
+      "mainImg": "https://ibrahemmuhhamed.github.io/myPortfolio/images/project.jpg",
+      "disktopImgs": ["https://ibrahemmuhhamed.github.io/myPortfolio/images/854shots_so.png", "https://ibrahemmuhhamed.github.io/myPortfolio/images/869shots_so.png"],
       "mobileImgs": [
-        "https://ibrahemmuhhamed.github.io/myPortfolio/images395shots_so.png",
-        "https://ibrahemmuhhamed.github.io/myPortfolio/images537shots_so.png",
-        "https://ibrahemmuhhamed.github.io/myPortfolio/images537shots_so.png"
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images/395shots_so.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images/537shots_so.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images/537shots_so.png"
       ],
       "liveLink": "www.google.com"
     },
@@ -19,12 +19,12 @@
       "role": "front-end",
       "credit": "Absoulty NO Body",
       "year": 2024,
-      "mainImg": "https://ibrahemmuhhamed.github.io/myPortfolio/imagesproject.jpg",
-      "disktopImgs": ["https://ibrahemmuhhamed.github.io/myPortfolio/images854shots_so.png", "https://ibrahemmuhhamed.github.io/myPortfolio/images869shots_so.png"],
+      "mainImg": "https://ibrahemmuhhamed.github.io/myPortfolio/images/project.jpg",
+      "disktopImgs": ["https://ibrahemmuhhamed.github.io/myPortfolio/images/854shots_so.png", "https://ibrahemmuhhamed.github.io/myPortfolio/images/869shots_so.png"],
       "mobileImgs": [
-        "https://ibrahemmuhhamed.github.io/myPortfolio/images395shots_so.png",
-        "https://ibrahemmuhhamed.github.io/myPortfolio/images537shots_so.png",
-        "https://ibrahemmuhhamed.github.io/myPortfolio/images537shots_so.png"
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images/395shots_so.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images/537shots_so.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images/537shots_so.png"
       ],
       "liveLink": "www.google.com"
     },
@@ -33,15 +33,15 @@
       "role": "front-end",
       "credit": "Senne Winges",
       "year": 2024,
-      "mainImg": "https://ibrahemmuhhamed.github.io/myPortfolio/imagessennemain.png",
+      "mainImg": "https://ibrahemmuhhamed.github.io/myPortfolio/images/sennemain.png",
       "disktopImgs": [
-        "https://ibrahemmuhhamed.github.io/myPortfolio/imagesSenneWinges1.png",
-        "https://ibrahemmuhhamed.github.io/myPortfolio/imagessenneDisktop2.png"
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images/SenneWinges1.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images/senneDisktop2.png"
       ],
       "mobileImgs": [
-        "https://ibrahemmuhhamed.github.io/myPortfolio/imagessennemobile1.png",
-        "https://ibrahemmuhhamed.github.io/myPortfolio/imagessennemobile2.png",
-        "https://ibrahemmuhhamed.github.io/myPortfolio/imagessennemobile3.png"
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images/sennemobile1.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images/sennemobile2.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images/sennemobile3.png"
       ],
       "liveLink": "www.google.com"
     },
@@ -50,12 +50,12 @@
       "role": "front-end",
       "credit": "Absoulty NO Body",
       "year": 2024,
-      "mainImg": "https://ibrahemmuhhamed.github.io/myPortfolio/imagesproject.jpg",
-      "disktopImgs": ["https://ibrahemmuhhamed.github.io/myPortfolio/images854shots_so.png", "https://ibrahemmuhhamed.github.io/myPortfolio/images869shots_so.png"],
+      "mainImg": "https://ibrahemmuhhamed.github.io/myPortfolio/images/project.jpg",
+      "disktopImgs": ["https://ibrahemmuhhamed.github.io/myPortfolio/images/854shots_so.png", "https://ibrahemmuhhamed.github.io/myPortfolio/images/869shots_so.png"],
       "mobileImgs": [
-        "https://ibrahemmuhhamed.github.io/myPortfolio/images395shots_so.png",
-        "https://ibrahemmuhhamed.github.io/myPortfolio/images537shots_so.png",
-        "https://ibrahemmuhhamed.github.io/myPortfolio/images537shots_so.png"
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images/395shots_so.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images/537shots_so.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images/537shots_so.png"
       ],
       "liveLink": "www.google.com"
     }
