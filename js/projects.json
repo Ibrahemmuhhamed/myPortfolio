@@ -15,16 +15,16 @@
       "liveLink": "www.google.com"
     },
     {
-      "name": "Fantasy Assistant",
+      "name": "Fullstack Dashboard",
       "role": "front-end",
-      "credit": "Absoulty NO Body",
+      "credit": "My Team College Team",
       "year": 2024,
-      "mainImg": "https://ibrahemmuhhamed.github.io/myPortfolio/images/project.jpg",
-      "disktopImgs": ["https://ibrahemmuhhamed.github.io/myPortfolio/images/854shots_so.png", "https://ibrahemmuhhamed.github.io/myPortfolio/images/869shots_so.png"],
+      "mainImg": "https://ibrahemmuhhamed.github.io/myPortfolio/images/dashboardMain.jpeg",
+      "disktopImgs": ["https://ibrahemmuhhamed.github.io/myPortfolio/images/dashboardDesktop1.png", "https://ibrahemmuhhamed.github.io/myPortfolio/images/dashboardDesktop2.png"],
       "mobileImgs": [
-        "https://ibrahemmuhhamed.github.io/myPortfolio/images/395shots_so.png",
-        "https://ibrahemmuhhamed.github.io/myPortfolio/images/537shots_so.png",
-        "https://ibrahemmuhhamed.github.io/myPortfolio/images/537shots_so.png"
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images/dashboardMobile1.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images/dashboardMobile2.png",
+        "https://ibrahemmuhhamed.github.io/myPortfolio/images/dashboardMobile3.png"
       ],
       "liveLink": "www.google.com"
     },
