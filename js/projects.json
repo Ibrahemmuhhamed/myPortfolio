@@ -12,7 +12,7 @@
         "https://ibrahemmuhhamed.github.io/myPortfolio/images/537shots_so.png",
         "https://ibrahemmuhhamed.github.io/myPortfolio/images/537shots_so.png"
       ],
-      "liveLink": "www.google.com"
+      "liveLink": "https://ibrahemmuhhamed.github.io/fantasyAssistant/"
     },
     {
       "name": "Fullstack Dashboard",
@@ -26,7 +26,7 @@
         "https://ibrahemmuhhamed.github.io/myPortfolio/images/dashboardMobile2.png",
         "https://ibrahemmuhhamed.github.io/myPortfolio/images/dashboardMobile3.png"
       ],
-      "liveLink": "www.google.com"
+      "liveLink": "https://ibrahemmuhhamed.github.io/E-commerce-Dashboard/"
     },
     {
       "name": "Senne Winges Portfolio",
@@ -43,21 +43,7 @@
         "https://ibrahemmuhhamed.github.io/myPortfolio/images/sennemobile2.png",
         "https://ibrahemmuhhamed.github.io/myPortfolio/images/sennemobile3.png"
       ],
-      "liveLink": "www.google.com"
-    },
-    {
-      "name": "Fantasy Assistant",
-      "role": "front-end",
-      "credit": "Absoulty NO Body",
-      "year": 2024,
-      "mainImg": "https://ibrahemmuhhamed.github.io/myPortfolio/images/project.jpg",
-      "disktopImgs": ["https://ibrahemmuhhamed.github.io/myPortfolio/images/854shots_so.png", "https://ibrahemmuhhamed.github.io/myPortfolio/images/869shots_so.png"],
-      "mobileImgs": [
-        "https://ibrahemmuhhamed.github.io/myPortfolio/images/395shots_so.png",
-        "https://ibrahemmuhhamed.github.io/myPortfolio/images/537shots_so.png",
-        "https://ibrahemmuhhamed.github.io/myPortfolio/images/537shots_so.png"
-      ],
-      "liveLink": "www.google.com"
+      "liveLink": "https://ibrahemmuhhamed.github.io/Senne-Winges-Portfolio/"
     }
   ]
 }
