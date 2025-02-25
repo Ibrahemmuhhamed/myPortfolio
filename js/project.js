@@ -34,17 +34,19 @@ function displayProject() {
     disktopImgs,
     mobileImgs,
     year,
+    liveLink
   } = project;
   const projectName = document.querySelector(".project--name");
   const projectRole = document.querySelector(".project--role");
   const projectCredit = document.querySelector(".project--credit");
   const mainImgElement = document.querySelector("#mainImg");
-
+  const liveLink = document.querySelector("project--link");
+  
   projectName.innerHTML = name;
   projectRole.innerHTML = role;
   projectCredit.innerHTML = credit;
   mainImgElement.src = mainImg;
-
+  liveLink.href = liveLink;
   const disktopImgsContainer = document.querySelector(".disktop");
 
   // insure that the container is empty
