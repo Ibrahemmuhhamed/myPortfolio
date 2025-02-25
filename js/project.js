@@ -40,7 +40,7 @@ function displayProject() {
   const projectRole = document.querySelector(".project--role");
   const projectCredit = document.querySelector(".project--credit");
   const mainImgElement = document.querySelector("#mainImg");
-  const liveLink = document.querySelector("project--link");
+  const liveLink = document.querySelector(".project--link");
   
   projectName.innerHTML = name;
   projectRole.innerHTML = role;
